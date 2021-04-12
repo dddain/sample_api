@@ -94,8 +94,6 @@ public class ClipService {
 
             P_ClipRecommendInfoVo infoVo = new Gson().fromJson(procedureVo.getExt(), P_ClipRecommendInfoVo.class);
             ClipRecommendInfoVo recommendInfo = new ClipRecommendInfoVo(infoVo);
-            //P_ClipRecommendLeaderExtVo minDateVo = new Gson().fromJson(procedureVo1.getExt(), P_ClipRecommendLeaderExtVo.class);
-            //String minDate = minDateVo.getMinRecDate().replace(" 00:00:00", "");
             Collections.reverse(leaderList);
             resultMap.put("recommendInfo", recommendInfo);
             resultMap.put("list", outVoList);
